@@ -24,7 +24,15 @@ export class CandidatesComponent implements OnInit {
   }
 
   // Code the addToCrew function here:
-
+  
+  addToCrew(obj){
+    let crewIndex = this.crew.indexOf(obj)
+    if (crewIndex != -1){
+      alert("choose someone else")
+    } else if (crewIndex = -1){
+      this.crew.push(obj)
+    }
+  }
 
   // BONUS: Code the changeMissionName function here:
 
